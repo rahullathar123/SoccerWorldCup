@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.soccerworldcup.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/soccer"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="England"
+            android:textAllCaps="true"
+            android:textColor="#FF9800"
+            android:textSize="29sp"/>
+
+        <TextView
+            android:id="@+id/England_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="0"
+            android:textColor="#FFC107"
+            android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="37dp"
+                android:onClick="England_goal"
+                android:text="Goal" />
+
+            <Button
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="37dp"
+                android:onClick="England_Free_Score"
+                android:text="Foul\
+                             (Free Kick)" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="230dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_blue_bright" />
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily=""
+            android:text="Brazil"
+            android:textAllCaps="true"
+            android:textColor="#FF9800"
+            android:textSize="29sp" />
+
+        <TextView
+            android:id="@+id/Brazil_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="0"
+            android:textColor="#FFC107"
+            android:textSize="50sp" />
+        <Button
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="37dp"
+            android:onClick="Brazil_goal"
+            android:text="Goal"/>
+        <Button
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="37dp"
+            android:onClick="Brazil_Free_Score"
+            android:text="Foul\
+                          (Free Kick)"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="ResetScore"
+        android:text="Reset"/>
+
+</RelativeLayout>
